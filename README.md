@@ -1,8 +1,8 @@
 # Atividade crud-produtos
 
-Necessário instalar:\ 
+Necessário instalar:\
 npm install express nodemon axios cors\
-npm install --save body-parser\
+npm install --save body-parser
 
 Comando para rodar servidor:\
-npm start\
+npm start
