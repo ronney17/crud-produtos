@@ -57,10 +57,10 @@ app.put("/produtos", (req, res, next) => {
 
 //Deletar
 app.delete("/produtos/:id", (req, res, next) => {
-    const { id } = req.params;
-
-    produtos.splice(id, 1);
-
+    const id = req.params.id;
+    produtos.forEach((produto, index) => {
+        if (produto.id == id) produtos.splice(index, 1)
+    })
     res.status(200).json(produtos);
 })
 
